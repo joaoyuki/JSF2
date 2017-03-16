@@ -2,11 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"> 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
 
 <h:head></h:head> 
 <h:body> 
 	<!-- Repare que aqui utilizamos um EL (Expression Language) para chamarmos o ManagedBean e depois acessarmos o método getMensagem -->
-	<h:outputText value="#{olaMundo.mensagem}" ></h:outputText>
+	<p:outputLabel value="#{olaMundo.mensagem}" ></p:outputLabel> <br/>
+	
+	<!-- Aqui usamos o componente outputLabel do Primefaces para exibir uma mensagem estática -->
+	<p:outputLabel value="Olá mundo - estático" ></p:outputLabel>
+	
+	
 </h:body> 
 </html>
